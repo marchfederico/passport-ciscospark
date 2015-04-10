@@ -1,0 +1,547 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json passport-projectsquared-examples-login@0.0.0 No description
+5 warn package.json passport-projectsquared-examples-login@0.0.0 No repository field.
+6 warn package.json passport-projectsquared-examples-login@0.0.0 No README data
+7 verbose install where, deps [ '/Users/marfeder/Projects/passport-ciscospark/examples/login',
+7 verbose install   [ 'express', 'ejs', 'passport', 'passport-ciscospark' ] ]
+8 verbose install where, peers [ '/Users/marfeder/Projects/passport-ciscospark/examples/login',
+8 verbose install   [] ]
+9 info preinstall passport-projectsquared-examples-login@0.0.0
+10 silly cache add args [ 'express@2.x.x', null ]
+11 verbose cache add spec express@2.x.x
+12 silly cache add args [ 'ejs@>= 0.0.0', null ]
+13 verbose cache add spec ejs@>= 0.0.0
+14 silly cache add parsed spec { raw: 'express@2.x.x',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'express',
+14 silly cache add   rawSpec: '2.x.x',
+14 silly cache add   spec: '>=2.0.0 <3.0.0',
+14 silly cache add   type: 'range' }
+15 verbose addNamed express@>=2.0.0 <3.0.0
+16 silly addNamed semver.valid null
+17 silly addNamed semver.validRange >=2.0.0 <3.0.0
+18 silly addNameRange { name: 'express', range: '>=2.0.0 <3.0.0', hasData: false }
+19 silly mapToRegistry name express
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/express
+23 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+24 silly cache add parsed spec { raw: 'ejs@>= 0.0.0',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'ejs',
+24 silly cache add   rawSpec: '>= 0.0.0',
+24 silly cache add   spec: '>=0.0.0',
+24 silly cache add   type: 'range' }
+25 verbose addNamed ejs@>=0.0.0
+26 silly addNamed semver.valid null
+27 silly addNamed semver.validRange >=0.0.0
+28 silly addNameRange { name: 'ejs', range: '>=0.0.0', hasData: false }
+29 silly mapToRegistry name ejs
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/ejs
+33 verbose addNameRange registry:https://registry.npmjs.org/ejs not in flight; fetching
+34 silly cache add args [ 'passport@>= 0.0.0', null ]
+35 verbose cache add spec passport@>= 0.0.0
+36 silly cache add parsed spec { raw: 'passport@>= 0.0.0',
+36 silly cache add   scope: null,
+36 silly cache add   name: 'passport',
+36 silly cache add   rawSpec: '>= 0.0.0',
+36 silly cache add   spec: '>=0.0.0',
+36 silly cache add   type: 'range' }
+37 verbose addNamed passport@>=0.0.0
+38 silly addNamed semver.valid null
+39 silly addNamed semver.validRange >=0.0.0
+40 silly addNameRange { name: 'passport', range: '>=0.0.0', hasData: false }
+41 silly mapToRegistry name passport
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/passport
+45 verbose addNameRange registry:https://registry.npmjs.org/passport not in flight; fetching
+46 silly cache add args [ 'passport-ciscospark@>= 0.0.0', null ]
+47 verbose cache add spec passport-ciscospark@>= 0.0.0
+48 silly cache add parsed spec { raw: 'passport-ciscospark@>= 0.0.0',
+48 silly cache add   scope: null,
+48 silly cache add   name: 'passport-ciscospark',
+48 silly cache add   rawSpec: '>= 0.0.0',
+48 silly cache add   spec: '>=0.0.0',
+48 silly cache add   type: 'range' }
+49 verbose addNamed passport-ciscospark@>=0.0.0
+50 silly addNamed semver.valid null
+51 silly addNamed semver.validRange >=0.0.0
+52 silly addNameRange { name: 'passport-ciscospark', range: '>=0.0.0', hasData: false }
+53 silly mapToRegistry name passport-ciscospark
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry uri https://registry.npmjs.org/passport-ciscospark
+57 verbose addNameRange registry:https://registry.npmjs.org/passport-ciscospark not in flight; fetching
+58 verbose request uri https://registry.npmjs.org/express
+59 verbose request no auth needed
+60 info attempt registry request try #1 at 3:03:23 PM
+61 verbose request id a8ed6e3d26852fba
+62 http request GET https://registry.npmjs.org/express
+63 verbose request uri https://registry.npmjs.org/ejs
+64 verbose request no auth needed
+65 info attempt registry request try #1 at 3:03:23 PM
+66 http request GET https://registry.npmjs.org/ejs
+67 verbose request uri https://registry.npmjs.org/passport
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 3:03:23 PM
+70 http request GET https://registry.npmjs.org/passport
+71 verbose request uri https://registry.npmjs.org/passport-ciscospark
+72 verbose request no auth needed
+73 info attempt registry request try #1 at 3:03:23 PM
+74 http request GET https://registry.npmjs.org/passport-ciscospark
+75 http 200 https://registry.npmjs.org/ejs
+76 silly get cb [ 200,
+76 silly get   { date: 'Fri, 10 Apr 2015 22:03:23 GMT',
+76 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+76 silly get     etag: '"46IEDUAIH1Q2CB43KJM06JOGZ"',
+76 silly get     'content-type': 'application/json',
+76 silly get     'cache-control': 'max-age=60',
+76 silly get     'content-length': '45016',
+76 silly get     'accept-ranges': 'bytes',
+76 silly get     via: '1.1 varnish',
+76 silly get     age: '35',
+76 silly get     'x-served-by': 'cache-lax1423-LAX',
+76 silly get     'x-cache': 'HIT',
+76 silly get     'x-cache-hits': '1',
+76 silly get     'x-timer': 'S1428703403.539780,VS0,VE0',
+76 silly get     vary: 'Accept',
+76 silly get     'keep-alive': 'timeout=10, max=50',
+76 silly get     connection: 'Keep-Alive' } ]
+77 verbose get saving ejs to /Users/marfeder/.npm/registry.npmjs.org/ejs/.cache.json
+78 http 200 https://registry.npmjs.org/passport
+79 silly get cb [ 200,
+79 silly get   { date: 'Fri, 10 Apr 2015 22:03:23 GMT',
+79 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+79 silly get     etag: '"AGYKDSLFQQL2S2DIJE09GOT50"',
+79 silly get     'content-type': 'application/json',
+79 silly get     'cache-control': 'max-age=60',
+79 silly get     'content-length': '34025',
+79 silly get     'accept-ranges': 'bytes',
+79 silly get     via: '1.1 varnish',
+79 silly get     age: '57',
+79 silly get     'x-served-by': 'cache-lax1422-LAX',
+79 silly get     'x-cache': 'HIT',
+79 silly get     'x-cache-hits': '1',
+79 silly get     'x-timer': 'S1428703403.541035,VS0,VE0',
+79 silly get     vary: 'Accept',
+79 silly get     'keep-alive': 'timeout=10, max=50',
+79 silly get     connection: 'Keep-Alive' } ]
+80 verbose get saving passport to /Users/marfeder/.npm/registry.npmjs.org/passport/.cache.json
+81 http 404 https://registry.npmjs.org/passport-ciscospark
+82 verbose headers { date: 'Fri, 10 Apr 2015 22:03:23 GMT',
+82 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+82 verbose headers   'content-type': 'application/json',
+82 verbose headers   'cache-control': 'max-age=0',
+82 verbose headers   'content-length': '51',
+82 verbose headers   'accept-ranges': 'bytes',
+82 verbose headers   via: '1.1 varnish',
+82 verbose headers   age: '0',
+82 verbose headers   'x-served-by': 'cache-lax1435-LAX',
+82 verbose headers   'x-cache': 'MISS',
+82 verbose headers   'x-cache-hits': '0',
+82 verbose headers   'x-timer': 'S1428703403.543869,VS0,VE80',
+82 verbose headers   'keep-alive': 'timeout=10, max=50',
+82 verbose headers   connection: 'Keep-Alive' }
+83 silly get cb [ 404,
+83 silly get   { date: 'Fri, 10 Apr 2015 22:03:23 GMT',
+83 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+83 silly get     'content-type': 'application/json',
+83 silly get     'cache-control': 'max-age=0',
+83 silly get     'content-length': '51',
+83 silly get     'accept-ranges': 'bytes',
+83 silly get     via: '1.1 varnish',
+83 silly get     age: '0',
+83 silly get     'x-served-by': 'cache-lax1435-LAX',
+83 silly get     'x-cache': 'MISS',
+83 silly get     'x-cache-hits': '0',
+83 silly get     'x-timer': 'S1428703403.543869,VS0,VE80',
+83 silly get     'keep-alive': 'timeout=10, max=50',
+83 silly get     connection: 'Keep-Alive' } ]
+84 silly addNameRange number 2 { name: 'passport', range: '>=0.0.0', hasData: true }
+85 silly addNameRange versions [ 'passport',
+85 silly addNameRange   [ '0.1.0',
+85 silly addNameRange     '0.1.1',
+85 silly addNameRange     '0.1.2',
+85 silly addNameRange     '0.1.3',
+85 silly addNameRange     '0.1.4',
+85 silly addNameRange     '0.1.5',
+85 silly addNameRange     '0.1.6',
+85 silly addNameRange     '0.1.7',
+85 silly addNameRange     '0.1.8',
+85 silly addNameRange     '0.1.9',
+85 silly addNameRange     '0.1.10',
+85 silly addNameRange     '0.1.11',
+85 silly addNameRange     '0.1.12',
+85 silly addNameRange     '0.1.13',
+85 silly addNameRange     '0.1.14',
+85 silly addNameRange     '0.1.15',
+85 silly addNameRange     '0.1.16',
+85 silly addNameRange     '0.1.17',
+85 silly addNameRange     '0.1.18',
+85 silly addNameRange     '0.2.0',
+85 silly addNameRange     '0.2.1' ] ]
+86 verbose addNamed passport@0.2.1
+87 silly addNamed semver.valid 0.2.1
+88 silly addNamed semver.validRange 0.2.1
+89 silly addNameRange number 2 { name: 'ejs', range: '>=0.0.0', hasData: true }
+90 silly addNameRange versions [ 'ejs',
+90 silly addNameRange   [ '0.0.1',
+90 silly addNameRange     '0.0.2',
+90 silly addNameRange     '0.0.3',
+90 silly addNameRange     '0.0.4',
+90 silly addNameRange     '0.1.0',
+90 silly addNameRange     '0.2.0',
+90 silly addNameRange     '0.2.1',
+90 silly addNameRange     '0.3.0',
+90 silly addNameRange     '0.3.1',
+90 silly addNameRange     '0.4.0',
+90 silly addNameRange     '0.4.1',
+90 silly addNameRange     '0.4.2',
+90 silly addNameRange     '0.4.3',
+90 silly addNameRange     '0.5.0',
+90 silly addNameRange     '0.6.0',
+90 silly addNameRange     '0.6.1',
+90 silly addNameRange     '0.7.0',
+90 silly addNameRange     '0.7.1',
+90 silly addNameRange     '0.7.2',
+90 silly addNameRange     '0.8.0',
+90 silly addNameRange     '0.8.1',
+90 silly addNameRange     '0.8.2',
+90 silly addNameRange     '0.8.3',
+90 silly addNameRange     '0.8.4',
+90 silly addNameRange     '0.8.5',
+90 silly addNameRange     '0.8.6',
+90 silly addNameRange     '0.8.8',
+90 silly addNameRange     '1.0.0',
+90 silly addNameRange     '2.0.2',
+90 silly addNameRange     '2.0.3',
+90 silly addNameRange     '2.0.4',
+90 silly addNameRange     '2.0.5',
+90 silly addNameRange     '2.0.6',
+90 silly addNameRange     '2.0.7',
+90 silly addNameRange     '2.0.8',
+90 silly addNameRange     '2.1.1',
+90 silly addNameRange     '2.1.2',
+90 silly addNameRange     '2.1.3',
+90 silly addNameRange     '2.1.4',
+90 silly addNameRange     '2.2.1',
+90 silly addNameRange     '2.2.2',
+90 silly addNameRange     '2.2.3',
+90 silly addNameRange     '2.2.4',
+90 silly addNameRange     '2.3.1' ] ]
+91 verbose addNamed ejs@2.3.1
+92 silly addNamed semver.valid 2.3.1
+93 silly addNamed semver.validRange 2.3.1
+94 silly mapToRegistry name ejs
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/ejs
+98 verbose addRemoteTarball https://registry.npmjs.org/ejs/-/ejs-2.3.1.tgz not in flight; adding
+99 verbose addRemoteTarball [ 'https://registry.npmjs.org/ejs/-/ejs-2.3.1.tgz',
+99 verbose addRemoteTarball   'a697d98ac401e32a99c3deed92c60c19b6199a7f' ]
+100 info retry fetch attempt 1 at 3:03:23 PM
+101 info attempt registry request try #1 at 3:03:23 PM
+102 http fetch GET https://registry.npmjs.org/ejs/-/ejs-2.3.1.tgz
+103 silly cache afterAdd passport@0.2.1
+104 verbose afterAdd /Users/marfeder/.npm/passport/0.2.1/package/package.json not in flight; writing
+105 verbose afterAdd /Users/marfeder/.npm/passport/0.2.1/package/package.json written
+106 http fetch 200 https://registry.npmjs.org/ejs/-/ejs-2.3.1.tgz
+107 silly fetchAndShaCheck shasum a697d98ac401e32a99c3deed92c60c19b6199a7f
+108 verbose addTmpTarball /var/folders/hz/vfgpdg5n1_x2pnlvh1l63cj00000gn/T/npm-29199-baabddf4/registry.npmjs.org/ejs/-/ejs-2.3.1.tgz not in flight; adding
+109 verbose addTmpTarball already have metadata; skipping unpack for ejs@2.3.1
+110 silly cache afterAdd ejs@2.3.1
+111 verbose afterAdd /Users/marfeder/.npm/ejs/2.3.1/package/package.json not in flight; writing
+112 verbose afterAdd /Users/marfeder/.npm/ejs/2.3.1/package/package.json written
+113 http 200 https://registry.npmjs.org/express
+114 silly get cb [ 200,
+114 silly get   { date: 'Fri, 10 Apr 2015 22:03:23 GMT',
+114 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+114 silly get     etag: '"9KJRPKVROQ00UYL1TCBCB0TKZ"',
+114 silly get     'content-type': 'application/json',
+114 silly get     'cache-control': 'max-age=60',
+114 silly get     'content-length': '492161',
+114 silly get     'accept-ranges': 'bytes',
+114 silly get     via: '1.1 varnish',
+114 silly get     age: '37',
+114 silly get     'x-served-by': 'cache-lax1421-LAX',
+114 silly get     'x-cache': 'HIT',
+114 silly get     'x-cache-hits': '2',
+114 silly get     'x-timer': 'S1428703403.541581,VS0,VE0',
+114 silly get     vary: 'Accept',
+114 silly get     'keep-alive': 'timeout=10, max=50',
+114 silly get     connection: 'Keep-Alive' } ]
+115 verbose get saving express to /Users/marfeder/.npm/registry.npmjs.org/express/.cache.json
+116 silly addNameRange number 2 { name: 'express', range: '>=2.0.0 <3.0.0', hasData: true }
+117 silly addNameRange versions [ 'express',
+117 silly addNameRange   [ '0.14.0',
+117 silly addNameRange     '0.14.1',
+117 silly addNameRange     '1.0.0',
+117 silly addNameRange     '1.0.1',
+117 silly addNameRange     '1.0.2',
+117 silly addNameRange     '1.0.3',
+117 silly addNameRange     '1.0.4',
+117 silly addNameRange     '1.0.5',
+117 silly addNameRange     '1.0.6',
+117 silly addNameRange     '1.0.7',
+117 silly addNameRange     '1.0.8',
+117 silly addNameRange     '2.0.0',
+117 silly addNameRange     '2.1.0',
+117 silly addNameRange     '2.1.1',
+117 silly addNameRange     '2.2.0',
+117 silly addNameRange     '2.2.1',
+117 silly addNameRange     '2.2.2',
+117 silly addNameRange     '2.3.0',
+117 silly addNameRange     '2.3.1',
+117 silly addNameRange     '2.3.2',
+117 silly addNameRange     '2.3.3',
+117 silly addNameRange     '2.3.4',
+117 silly addNameRange     '2.3.5',
+117 silly addNameRange     '2.3.6',
+117 silly addNameRange     '2.3.7',
+117 silly addNameRange     '2.3.8',
+117 silly addNameRange     '2.3.9',
+117 silly addNameRange     '2.3.10',
+117 silly addNameRange     '2.3.11',
+117 silly addNameRange     '2.3.12',
+117 silly addNameRange     '2.4.0',
+117 silly addNameRange     '2.4.1',
+117 silly addNameRange     '2.4.2',
+117 silly addNameRange     '2.4.3',
+117 silly addNameRange     '2.4.4',
+117 silly addNameRange     '2.4.5',
+117 silly addNameRange     '2.4.6',
+117 silly addNameRange     '2.4.7',
+117 silly addNameRange     '2.5.0',
+117 silly addNameRange     '2.5.1',
+117 silly addNameRange     '2.5.2',
+117 silly addNameRange     '2.5.3',
+117 silly addNameRange     '2.5.4',
+117 silly addNameRange     '2.5.5',
+117 silly addNameRange     '2.5.6',
+117 silly addNameRange     '2.5.7',
+117 silly addNameRange     '2.5.8',
+117 silly addNameRange     '2.5.9',
+117 silly addNameRange     '2.5.10',
+117 silly addNameRange     '2.5.11',
+117 silly addNameRange     '3.0.0',
+117 silly addNameRange     '3.0.1',
+117 silly addNameRange     '3.0.2',
+117 silly addNameRange     '3.0.3',
+117 silly addNameRange     '3.0.4',
+117 silly addNameRange     '3.0.5',
+117 silly addNameRange     '3.0.6',
+117 silly addNameRange     '3.1.0',
+117 silly addNameRange     '3.1.1',
+117 silly addNameRange     '3.1.2',
+117 silly addNameRange     '3.2.0',
+117 silly addNameRange     '3.2.1',
+117 silly addNameRange     '3.2.2',
+117 silly addNameRange     '3.2.3',
+117 silly addNameRange     '3.2.4',
+117 silly addNameRange     '3.2.5',
+117 silly addNameRange     '3.2.6',
+117 silly addNameRange     '3.3.0',
+117 silly addNameRange     '3.3.1',
+117 silly addNameRange     '3.3.2',
+117 silly addNameRange     '3.3.3',
+117 silly addNameRange     '3.3.4',
+117 silly addNameRange     '3.3.5',
+117 silly addNameRange     '3.3.6',
+117 silly addNameRange     '1.0.0-beta',
+117 silly addNameRange     '1.0.0-beta2',
+117 silly addNameRange     '1.0.0-rc',
+117 silly addNameRange     '1.0.0-rc2',
+117 silly addNameRange     '1.0.0-rc3',
+117 silly addNameRange     '1.0.0-rc4',
+117 silly addNameRange     '2.0.0-beta',
+117 silly addNameRange     '2.0.0-beta2',
+117 silly addNameRange     '2.0.0-beta3',
+117 silly addNameRange     '2.0.0-rc',
+117 silly addNameRange     '2.0.0-rc2',
+117 silly addNameRange     '2.0.0-rc3',
+117 silly addNameRange     '3.0.0-alpha1',
+117 silly addNameRange     '3.0.0-alpha2',
+117 silly addNameRange     '3.0.0-alpha3',
+117 silly addNameRange     '3.0.0-alpha4',
+117 silly addNameRange     '3.0.0-alpha5',
+117 silly addNameRange     '3.0.0-beta1',
+117 silly addNameRange     '3.0.0-beta2',
+117 silly addNameRange     '3.0.0-beta3',
+117 silly addNameRange     '3.0.0-beta4',
+117 silly addNameRange     '3.0.0-beta6',
+117 silly addNameRange     '3.0.0-beta7',
+117 silly addNameRange     '3.0.0-rc1',
+117 silly addNameRange     '3.0.0-rc2',
+117 silly addNameRange     '3.0.0-rc3',
+117 silly addNameRange     '3.0.0-rc4',
+117 silly addNameRange     '3.0.0-rc5',
+117 silly addNameRange     '3.3.7',
+117 silly addNameRange     '3.3.8',
+117 silly addNameRange     '3.4.0',
+117 silly addNameRange     '3.4.1',
+117 silly addNameRange     '3.4.2',
+117 silly addNameRange     '3.4.3',
+117 silly addNameRange     '3.4.4',
+117 silly addNameRange     '3.4.5',
+117 silly addNameRange     '3.4.6',
+117 silly addNameRange     '3.4.7',
+117 silly addNameRange     '3.4.8',
+117 silly addNameRange     '4.0.0-rc1',
+117 silly addNameRange     '4.0.0-rc2',
+117 silly addNameRange     '3.5.0',
+117 silly addNameRange     '4.0.0-rc3',
+117 silly addNameRange     '4.0.0-rc4',
+117 silly addNameRange     '3.5.1',
+117 silly addNameRange     '4.0.0',
+117 silly addNameRange     '3.5.2',
+117 silly addNameRange     '4.1.0',
+117 silly addNameRange     '4.1.1',
+117 silly addNameRange     '3.5.3',
+117 silly addNameRange     '4.1.2',
+117 silly addNameRange     '3.6.0',
+117 silly addNameRange     '4.2.0',
+117 silly addNameRange     '3.7.0',
+117 silly addNameRange     '3.8.0',
+117 silly addNameRange     '4.3.0',
+117 silly addNameRange     '4.3.1',
+117 silly addNameRange     '3.8.1',
+117 silly addNameRange     '4.3.2',
+117 silly addNameRange     '3.9.0',
+117 silly addNameRange     '4.4.0',
+117 silly addNameRange     '4.4.1',
+117 silly addNameRange     '3.10.0',
+117 silly addNameRange     '3.10.1',
+117 silly addNameRange     '3.10.2',
+117 silly addNameRange     '3.10.3',
+117 silly addNameRange     '3.10.4',
+117 silly addNameRange     '4.4.2',
+117 silly addNameRange     '3.10.5',
+117 silly addNameRange     '4.4.3',
+117 silly addNameRange     '3.11.0',
+117 silly addNameRange     '4.4.4',
+117 silly addNameRange     '3.12.0',
+117 silly addNameRange     '3.12.1',
+117 silly addNameRange     '4.4.5',
+117 silly addNameRange     '3.13.0',
+117 silly addNameRange     '4.5.0',
+117 silly addNameRange     '4.5.1',
+117 silly addNameRange     '3.14.0',
+117 silly addNameRange     '4.6.0',
+117 silly addNameRange     '4.6.1',
+117 silly addNameRange     '3.15.0',
+117 silly addNameRange     '4.7.0',
+117 silly addNameRange     '3.15.1',
+117 silly addNameRange     '4.7.1',
+117 silly addNameRange     '3.15.2',
+117 silly addNameRange     '4.7.2',
+117 silly addNameRange     '4.7.3',
+117 silly addNameRange     '3.15.3',
+117 silly addNameRange     '4.7.4',
+117 silly addNameRange     '3.16.0',
+117 silly addNameRange     '4.8.0',
+117 silly addNameRange     '3.16.1',
+117 silly addNameRange     '4.8.1',
+117 silly addNameRange     '3.16.2',
+117 silly addNameRange     '4.8.2',
+117 silly addNameRange     '3.16.3',
+117 silly addNameRange     '3.16.4',
+117 silly addNameRange     '4.8.3',
+117 silly addNameRange     '3.16.5',
+117 silly addNameRange     '3.16.6',
+117 silly addNameRange     '4.8.4',
+117 silly addNameRange     '3.16.7',
+117 silly addNameRange     '4.8.5',
+117 silly addNameRange     '3.16.8',
+117 silly addNameRange     '4.8.6',
+117 silly addNameRange     '3.16.9',
+117 silly addNameRange     '4.8.7',
+117 silly addNameRange     '3.16.10',
+117 silly addNameRange     '4.8.8',
+117 silly addNameRange     '3.17.0',
+117 silly addNameRange     '3.17.1',
+117 silly addNameRange     '4.9.0',
+117 silly addNameRange     '3.17.2',
+117 silly addNameRange     '4.9.1',
+117 silly addNameRange     '4.9.2',
+117 silly addNameRange     '3.17.3',
+117 silly addNameRange     '4.9.3',
+117 silly addNameRange     '3.17.4',
+117 silly addNameRange     '4.9.4',
+117 silly addNameRange     '3.17.5',
+117 silly addNameRange     '4.9.5',
+117 silly addNameRange     '3.17.6',
+117 silly addNameRange     '3.17.7',
+117 silly addNameRange     '4.9.6',
+117 silly addNameRange     '4.9.7',
+117 silly addNameRange     '3.17.8',
+117 silly addNameRange     '4.9.8',
+117 silly addNameRange     '3.18.0',
+117 silly addNameRange     '3.18.1',
+117 silly addNameRange     '4.10.0',
+117 silly addNameRange     '3.18.2',
+117 silly addNameRange     '4.10.1',
+117 silly addNameRange     '5.0.0-alpha.1',
+117 silly addNameRange     '3.18.3',
+117 silly addNameRange     '4.10.2',
+117 silly addNameRange     '3.18.4',
+117 silly addNameRange     '4.10.3',
+117 silly addNameRange     '4.10.4',
+117 silly addNameRange     '4.10.5',
+117 silly addNameRange     '3.18.5',
+117 silly addNameRange     '3.18.6',
+117 silly addNameRange     '4.10.6',
+117 silly addNameRange     '4.10.7',
+117 silly addNameRange     '3.19.0',
+117 silly addNameRange     '4.10.8',
+117 silly addNameRange     '4.11.0',
+117 silly addNameRange     '3.19.1',
+117 silly addNameRange     '4.11.1',
+117 silly addNameRange     '3.19.2',
+117 silly addNameRange     '4.11.2',
+117 silly addNameRange     '3.20.0',
+117 silly addNameRange     '4.12.0',
+117 silly addNameRange     '3.20.1',
+117 silly addNameRange     '4.12.1',
+117 silly addNameRange     '4.12.2',
+117 silly addNameRange     '3.20.2',
+117 silly addNameRange     '4.12.3' ] ]
+118 verbose addNamed express@2.5.11
+119 silly addNamed semver.valid 2.5.11
+120 silly addNamed semver.validRange 2.5.11
+121 silly cache afterAdd express@2.5.11
+122 verbose afterAdd /Users/marfeder/.npm/express/2.5.11/package/package.json not in flight; writing
+123 verbose afterAdd /Users/marfeder/.npm/express/2.5.11/package/package.json written
+124 verbose stack Error: 404 Not Found: passport-ciscospark
+124 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+124 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+124 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+124 verbose stack     at Request.emit (events.js:110:17)
+124 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+124 verbose stack     at Request.emit (events.js:129:20)
+124 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+124 verbose stack     at IncomingMessage.emit (events.js:129:20)
+124 verbose stack     at _stream_readable.js:908:16
+124 verbose stack     at process._tickCallback (node.js:355:11)
+125 verbose statusCode 404
+126 verbose pkgid passport-ciscospark
+127 verbose cwd /Users/marfeder/Projects/passport-ciscospark/examples/login
+128 error Darwin 13.4.0
+129 error argv "node" "/usr/local/bin/npm" "install"
+130 error node v0.12.2
+131 error npm  v2.7.4
+132 error code E404
+133 error 404 Not Found: passport-ciscospark
+133 error 404
+133 error 404 'passport-ciscospark' is not in the npm registry.
+133 error 404 You should bug the author to publish it (or use the name yourself!)
+133 error 404 It was specified as a dependency of 'passport-projectsquared-examples-login'
+133 error 404
+133 error 404 Note that you can also install from a
+133 error 404 tarball, folder, http url, or git url.
+134 verbose exit [ 1, true ]

@@ -1,0 +1,30 @@
+{
+  "name": "passport-ciscospark",
+  "version": "0.0.1",
+  "description": "Cisco Spark authentication strategy for Passport.",
+  "keywords": ["passport", "cisco","spark" ,"auth", "authn", "authentication", "identity"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marchfederico/passport-ciscospark.git"
+  },
+  "bugs": {
+    "url": "http://github.com/marchfederico/passport-ciscospark/issues"
+  },
+  "author": {
+    "name": "Marcello Federico",
+    "email": "marcellof@gmail.com"
+  },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "./lib/passport-ciscospark",
+  "dependencies": {
+    "pkginfo": "0.2.x",
+    "passport-oauth": "0.1.x"
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "engines": { "node": ">= 0.4.0" }
+}

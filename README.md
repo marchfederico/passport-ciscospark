@@ -1,7 +1,7 @@
 # Passport-ciscospark
 
 [Passport](https://github.com/march/passport) strategy for authenticating
-with [Cisco's Project Squared](http://www.ciscospark.com/) using the OAuth 2.0 API.
+with [Cisco Spark](http://www.ciscospark.com/) using the OAuth 2.0 API.
 
 This module lets you authenticate using Project Squared in your Node.js applications.  By
 plugging into Passport, Project Squared authentication can be easily and unobtrusively

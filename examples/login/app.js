@@ -1,7 +1,7 @@
 var express = require('express')
   , passport = require('passport')
   , util = require('util')
-  , ProjectSquaredStrategy = require('passport-ciscospark').Strategy;
+  , CiscoSparkStrategy = require('passport-ciscospark').Strategy;
 
 var CISCOSPARK_CLIENT_ID = "--insert-id-here--"
 var CISCOSPARK_CLIENT_SECRET = "--insert-secret-here--";
@@ -86,13 +86,13 @@ app.get('/login', function(req, res){
 //   redirecting the user to ciscospark.com.  After authorization, ProjectSquared
 //   will redirect the user back to this application at /auth/ciscospark/callback
 app.get('/auth/ciscospark',
-  passport.authenticate('projectsquared', { scope: ['profile', 'postal_code'] }),
+  passport.authenticate('ciscospark', { scope: ['webexsquare:get_conversation', 'Identity:SCIM'] }),
   function(req, res){
-    // The request will be redirected to ProjectSquared for authentication, so this
+    // The request will be redirected to Cisco Spark for authentication, so this
     // function will not be called.
   });
 
-// GET /auth/projectsquared/callback
+// GET /auth/ciscospark/callback
 //   Use passport.authenticate() as route middleware to authenticate the
 //   request.  If authentication fails, the user will be redirected back to the
 //   login page.  Otherwise, the primary route function function will be called,
